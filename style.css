@@ -1,53 +1,145 @@
-    :root {
-      --Yellow: hsl(47, 88%, 63%);
---White: hsl(0, 0%, 100%);
---Grey: hsl(0, 0%, 50%);
---Black: hsl(0, 0%, 7%);
-    }  
-    * {
-      font-family: 'Figtree', sans-serif;
-    } 
-    body {
-      background-color: var(--Yellow); 
-      display: grid; 
-      place-content: center; 
-      place-items: center; 
-      box-sizing: border-box;
-    } 
-    .card {
-      display: grid; 
-      place-content: center; 
-      width: 360px; 
-      height: 510px;
-      place-items: center; 
-      background-color: var(--White); 
-      border-radius: 10px; 
-      padding: 10px; 
-      margin: 10px;
-    } 
-    .h4 {
-      background-color: var(--Yellow); 
-      width: 65px; 
-      padding: 10px; 
-      border-radius: 10px;
-    } 
-    svg {
-  width: 700px;
-  height: 190px;
-  padding: 10px;
-  margin: 10px;
-  border-radiud: 10pc;
-    } 
-    .content-card {
-      padding: 5px;
-    }
-    .attribution { 
-      font-size: 11px; 
-      text-align: center; 
-    }
-    .attribution a { 
-      color: hsl(228, 45%, 44%);
-    } 
-@media (width < 37.5rem) {
+/* CSS Reset by Andy bell 👇 */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* CSS styles 👇 */
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+* {
+  font-family: "Figtree", sans-serif;
+}
+body {
+  background-color: var(--Yellow);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 19.5rem;
+  background-color: var(--White);
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+}
+.card p {
+  font-weight: 500;
+  color: var(--Grey)
+}
+.content {
+  padding: 5px;
+}
+.heading {
+  background-color: var(--Yellow);
+  padding: 5px;
+  border-radius: 10px;
+  width: 76px;
+}
+.heading p {
+  font-weight: 800;
+  color: var(--Black);
+}
+.card span {
+  font-weight: 500;
+}
+/*
+.h4 {
+  background-color: var(--Yellow);
+  width: 65px;
+  padding: 10px;
+  border-radius: 10px;
+}*/
+img {
+  border-radius: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:37.5rem) {
+  .card {
+    max-width: 21rem;
+  }
 }
