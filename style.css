@@ -85,20 +85,18 @@ select {
 }
 body {
   background-color: var(--Yellow);
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  box-sizing: border-box;
+  font-size: 1rem;
 }
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 19.5rem;
+  max-width: 22rem;
   background-color: var(--White);
   border-radius: 10px;
-  padding: 10px;
+  padding: 1em;
+  gap: 0.5em;
   margin: auto;
+  box-shadow:  9px 6px #000;
 }
 .card p {
   font-weight: 500;
@@ -120,6 +118,10 @@ body {
 .card span {
   font-weight: 500;
 }
+.profile p {
+  font-weight: 800;
+  color: var(--Black);
+}
 /*
 .h4 {
   background-color: var(--Yellow);
@@ -136,10 +138,4 @@ img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media screen and (min-width:37.5rem) {
-  .card {
-    max-width: 21rem;
-  }
 }
