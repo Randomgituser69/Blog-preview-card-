@@ -84,6 +84,9 @@ select {
   font-family: "Figtree", sans-serif;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--Yellow);
   font-size: 1rem;
 }
@@ -102,16 +105,26 @@ body {
   font-weight: 500;
   color: var(--Grey)
 }
+.card h1:hover {
+  color: var(--Yellow);
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+.profile img {
+  border-radius: 100%;
+}
 .content {
   padding: 5px;
 }
-.heading {
+.topic {
   background-color: var(--Yellow);
   padding: 5px;
   border-radius: 10px;
   width: 76px;
 }
-.heading p {
+.topic p {
   font-weight: 800;
   color: var(--Black);
 }
