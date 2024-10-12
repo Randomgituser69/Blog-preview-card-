@@ -111,7 +111,7 @@ body {
 .profile {
   display: flex;
   flex-direction: row;
-}
+} 
 .profile img {
   border-radius: 100%;
 }
@@ -148,6 +148,7 @@ img {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1em;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
