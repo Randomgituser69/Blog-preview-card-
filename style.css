@@ -84,45 +84,51 @@ select {
   font-family: "Figtree", sans-serif;
 }
 body {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color: var(--Yellow);
   font-size: 1rem;
 }
 .card {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  margin: auto;
   max-width: 22rem;
   background-color: var(--White);
   border-radius: 10px;
+  border: 2px solid black;
   padding: 1em;
-  gap: 0.5em;
-  margin: auto;
-  box-shadow:  9px 6px #000;
+  gap: 2em;
+  box-shadow: 9px 6px #000;
 }
 .card p {
   font-weight: 500;
-  color: var(--Grey)
+  color: var(--Grey);
 }
-.card h1:hover {
+.card a:hover {
   color: var(--Yellow);
+}
+.card a {
+  text-decoration: none;
+  color: var(--Black);
 }
 .profile {
   display: flex;
   flex-direction: row;
-} 
+  gap: 0.8em;
+}
 .profile img {
-  border-radius: 100%;
+  display: inline;
+  align-self: start;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 .content {
   padding: 5px;
 }
 .topic {
   background-color: var(--Yellow);
-  padding: 5px;
+  padding: 5px; 
+  margin: 3px;
   border-radius: 10px;
-  width: 76px;
 }
 .topic p {
   font-weight: 800;
