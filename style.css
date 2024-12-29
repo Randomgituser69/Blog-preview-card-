@@ -87,6 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: var(--Yellow);
   font-size: 1rem;
 }
@@ -130,7 +131,7 @@ p {
   color: var(--Black);
   font-weight: 800;
 } 
-h2,
+.card h1,
 .description,
 .publish {
   margin: 0.2em 0;
